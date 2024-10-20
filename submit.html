@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berhasil Submit</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Elon Musk</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formulir.html">Formulir Pendaftaran</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Konten Utama -->
+    <div class="container mt-5 pt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow-sm p-4">
+            <h1 class="text-center mb-4">Berhasil Submit</h1>
+            <p class="text-center">
+              Terima kasih, <strong id="nama"></strong>! Anda telah berhasil
+              mendaftar sebagai penggemar Elon Musk.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-md-4 mb-3">
+            <h5>Tentang Elon Musk</h5>
+            <p>
+              Elon Musk adalah salah satu pengusaha paling inovatif dan
+              berpengaruh di dunia saat ini, yang berambisi mengubah dunia
+              melalui teknologi.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-3">
+            <h5>Tautan Cepat</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html#kehidupan-awal" class="text-white"
+                  >Kehidupan Awal</a
+                >
+              </li>
+              <li><a href="index.html#spacex" class="text-white">SpaceX</a></li>
+              <li><a href="index.html#tesla" class="text-white">Tesla</a></li>
+              <li>
+                <a href="index.html#neuralink" class="text-white">Neuralink</a>
+              </li>
+              <li>
+                <a href="index.html#boring-company" class="text-white"
+                  >The Boring Company</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="col-md-4 mb-3">
+            <h5>Ikuti Kami</h5>
+            <a href="#" class="text-white me-2"
+              ><i class="bi bi-facebook"></i> Facebook</a
+            ><br />
+            <a href="#" class="text-white me-2"
+              ><i class="bi bi-twitter"></i> Twitter</a
+            ><br />
+            <a href="#" class="text-white me-2"
+              ><i class="bi bi-instagram"></i> Instagram</a
+            >
+          </div>
+        </div>
+        <hr class="bg-light" />
+        <p class="mb-0">
+          © 2024 Halaman Penggemar Elon Musk. Hak Cipta Dilindungi.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript untuk mengambil nama dari query string -->
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("nama");
+      document.getElementById("nama").textContent = nama ? nama : "Pengguna";
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

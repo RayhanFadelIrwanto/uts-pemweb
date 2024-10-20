@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pendaftaran Penggemar</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="image/logo.png" alt="Logo Elon Musk" />Elon
+          Musk</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="formulir.html"
+                >Formulir Pendaftaran</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="tabel.html"
+                >Data Elon Musk</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid mt-5 pt-4">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 bg-light sidebar py-4">
+          <h4 class="text-center">Info Singkat</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <p class="text-center">
+                <strong>Tanggal Lahir:</strong> 28 Juni 1971
+              </p>
+            </li>
+            <li class="nav-item">
+              <p class="text-center">
+                <strong>Kebangsaan:</strong> Amerika Serikat
+              </p>
+            </li>
+            <li class="nav-item">
+              <p class="text-center">
+                <strong>Perusahaan:</strong> Tesla, SpaceX, Neuralink
+              </p>
+            </li>
+          </ul>
+
+          <hr />
+
+          <h5 class="text-center">Ikuti Elon Musk:</h5>
+          <div class="text-center">
+            <a href="#" class="text-dark me-2"
+              ><i class="bi bi-twitter"></i> Twitter</a
+            ><br />
+            <a href="#" class="text-dark me-2"
+              ><i class="bi bi-instagram"></i> Instagram</a
+            ><br />
+            <a href="#" class="text-dark me-2"
+              ><i class="bi bi-youtube"></i> YouTube</a
+            >
+          </div>
+        </div>
+
+        <!-- Konten Formulir -->
+        <div class="col-md-9 py-4">
+          <h2 class="text-center mb-4">
+            Formulir Pendaftaran Penggemar Elon Musk
+          </h2>
+
+          <!-- Formulir Pendaftaran -->
+          <form action="submit.html" method="GET">
+            <div class="mb-3" id="nama">
+              <label for="nama" class="form-label">Nama Lengkap</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama"
+                name="nama"
+                placeholder="Masukkan nama lengkap Anda"
+                required
+              />
+            </div>
+
+            <div class="mb-3" id="umur">
+              <label for="umur" class="form-label">Umur</label>
+              <input
+                type="number"
+                class="form-control"
+                id="umur"
+                name="umur"
+                placeholder="Masukkan umur Anda"
+                required
+              />
+            </div>
+
+            <div class="mb-3" id="gender">
+              <label for="gender" class="form-label">Jenis Kelamin</label>
+              <div>
+                <input
+                  type="radio"
+                  id="pria"
+                  name="gender"
+                  value="pria"
+                  required
+                />
+                <label for="pria">Pria</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="wanita"
+                  name="gender"
+                  value="wanita"
+                  required
+                />
+                <label for="wanita">Wanita</label>
+              </div>
+            </div>
+
+            <div class="mb-3" id="minat">
+              <label for="minat" class="form-label">Minat Anda</label>
+              <div>
+                <input type="checkbox" id="tesla" name="minat" value="tesla" />
+                <label for="tesla">Tesla</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="spacex"
+                  name="minat"
+                  value="spacex"
+                />
+                <label for="spacex">SpaceX</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="neuralink"
+                  name="minat"
+                  value="neuralink"
+                />
+                <label for="neuralink">Neuralink</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="boring"
+                  name="minat"
+                  value="boring"
+                />
+                <label for="boring">The Boring Company</label>
+              </div>
+            </div>
+
+            <div class="mb-3" id="password">
+              <label for="password" class="form-label">Kata Sandi</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                placeholder="Masukkan kata sandi"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Daftar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-md-4 mb-3">
+            <h5>Tentang Elon Musk</h5>
+            <p>
+              Elon Musk adalah salah satu pengusaha paling inovatif dan
+              berpengaruh di dunia saat ini, yang berambisi mengubah dunia
+              melalui teknologi.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-3">
+            <h5>Tautan Cepat</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html#kehidupan-awal" class="text-white"
+                  >Kehidupan Awal</a
+                >
+              </li>
+              <li><a href="index.html#spacex" class="text-white">SpaceX</a></li>
+              <li><a href="index.html#tesla" class="text-white">Tesla</a></li>
+              <li>
+                <a href="index.html#neuralink" class="text-white">Neuralink</a>
+              </li>
+              <li>
+                <a href="index.html#boring-company" class="text-white"
+                  >The Boring Company</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="col-md-4 mb-3">
+            <h5>Ikuti Kami</h5>
+            <a href="#" class="text-white me-2"
+              ><i class="bi bi-facebook"></i> Facebook</a
+            ><br />
+            <a href="#" class="text-white me-2"
+              ><i class="bi bi-twitter"></i> Twitter</a
+            ><br />
+            <a href="#" class="text-white me-2"
+              ><i class="bi bi-instagram"></i> Instagram</a
+            >
+          </div>
+        </div>
+        <hr class="bg-light" />
+        <p class="mb-0">
+          © 2024 Halaman Penggemar Elon Musk. Hak Cipta Dilindungi.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
